@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Page | BokAnka</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/base.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/admin.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-top">
+        <div class="logo">📚 BokAnka</div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Main</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html" id="profile-link">Profile</a></li>
+      </ul>
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="signup.html" class="btn">Sign up</a>
+        <a href="login.html" class="btn">Login</a>
+        <button id="logout-btn" class="btn hidden">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Admin dashbord</h2>
+      <h3>Super Admin ska med hjälp av admin-gränssnittet kunna välja mellan tre olika färgteman på webbplatsen. </h3>
+     
+      <h4> OBS! En användare ska ej kunna ändra teman</h4>
+    </section>
+  
+    <div class="user-info" style="text-align: center; margin: 1rem 0;">
+      <p>Logged in as: <strong><span id="username">Loading...</span></strong> (<span id="email">Loading...</span>)</p>
+    </div>
+  
+    <section style="text-align: center; margin: 2rem 0;">
+      <h4>🎨 Välj färgtema för webbplatsen</h4>
+      <select id="theme-select">
+        <option value="light">Light</option>
+        <option value="middle_light">Middle-light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </section>
+
+    <!-- Where admin user role will be printed -->
+<div id="admin-info" style="text-align: center;"></div>
+
+  
+    <section id="book-list" class="book-list">
+      <!-- Books will be rendered here -->
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 BokAnka. All rights reserved.</p>
+  </footer>
+</body>
+</html>

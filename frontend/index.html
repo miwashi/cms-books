@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookDucks | CMS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="js/base.js"></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/index.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-top">
+                <div class="logo">📚 BokAnka</div>
+                <button class="hamburger" id="hamburger">&#9776;</button>
+            </div>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html" id="profile-link">Profile</a></li>
+            </ul>
+
+            <div class="auth-buttons" id="auth-buttons">
+                <a href="signup.html" class="btn">Sign up</a>
+                <a href="login.html" class="btn">Login</a>
+                <button id="logout-btn" class="btn hidden">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>📚 Welcome to BokAnka</h1>
+            <p>Explore, rate, and save your favorite books!</p>
+
+            <div class="carousel">
+                <button class="carousel-btn left">&#10094;</button>
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="carousel-img active" />
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="carousel-img" />
+                <img src="https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_1280.jpg" class="carousel-img" />
+                <button class="carousel-btn right">&#10095;</button>
+                <button class="carousel-btn stop" id="stop-carousel">⏸</button>
+            </div>
+        </section>
+
+        <section id="book-list" class="book-list">
+            <!-- book list  -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BokAnka. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookDucks | Admin</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="js/home.js"></script>
+  <script src="js/theme.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-top">
+        <div class="logo">📚 BokAnka</div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Main</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html" id="profile-link">Profile</a></li>
+      </ul>
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="signup.html" class="btn">Sign up</a>
+        <a href="login.html" class="btn">Login</a>
+        <button id="logout-btn" class="btn hidden">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Home page</h2>
+      <!-- <h3>Inloggad användare kan spara böcker i sin ”Att läsa”-lista.</h3>
+      <h4>(VG) Användare kan betygsätta böcker direkt.</h4> -->
+    </section>
+
+    <div class="user-info" style="text-align: center; margin: 1rem 0;">
+      <p>Logged in as: <strong><span id="username">Loading...</span></strong> (<span id="email">Loading...</span>)</p>
+    </div>
+
+    <section id="book-list" class="book-list">
+      <!-- Books will be rendered here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BokAnka. All rights reserved.</p>
+  </footer>
+</body>
+</html>

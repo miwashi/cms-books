@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile | BookDucks</title>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/profile.js" defer></script>
+    <script src="js/theme.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="nav-top">
+            <div class="logo">📚 BokAnka</div>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <!-- <li><a href="index.html">Main</a></li> -->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html" id="profile-link">Profile</a></li>
+          </ul>
+          <!-- <div class="auth-buttons" id="auth-buttons">
+            <a href="signup.html" class="btn">Sign up</a>
+            <a href="login.html" class="btn">Login</a>
+            <button id="logout-btn" class="btn hidden">Logout</button>
+          </div> -->
+        </nav>
+      </header>
+    
+
+    <div class="container">
+        <section>
+            <h1>Welcome, <span id="username">Loading...</span>!</h1>
+            <p id="email">Loading...</p>
+          
+            <button id="logout-btn">Logout</button>
+        </section>
+
+        <main>
+            <!-- Saved books (Att läsa) -->
+            <section id="saved-books">
+                <h2>Att läsa (Saved Books)</h2>
+                <div>
+                    <label for="sort-saved-books">Sort by:</label>
+                    <select id="sort-saved-books">
+                        <option value="title">Title (A-Z)</option>
+                        <option value="author">Author (A-Z)</option>
+                    </select>
+                </div>
+                <ul id="saved-books-list">
+                    <!-- Saved books will be rendered here -->
+                </ul>
+            </section>
+
+            <!-- Rated books -->
+            <section id="rated-books">
+                <h2>Rated Books</h2>
+                <div>
+                    <label for="sort-rated-books">Sort by:</label>
+                    <select id="sort-rated-books">
+                        <option value="rating-high">Rating (Highest to Lowest)</option>
+                        <option value="rating-low">Rating (Lowest to Highest)</option>
+                        <option value="title">Title (A–Ö)</option>
+                        <option value="author">Author (A–Ö)</option>
+                      </select>
+                </div>
+
+                <ul id="rated-books-list">
+                    <!-- Rated books will be rendered here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 BokAnka. All rights reserved.</p>
+      </footer>
+
+</body>
+</html>

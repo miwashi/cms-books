@@ -1,0 +1,102 @@
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #007acc;
+  }
+  
+  #theme-section {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+  }
+  
+  #theme-section label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* Theme dropdown */
+  #theme-select {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #theme-select:hover {
+    background-color: #f0f0f0;
+  }
+  
+  #logout-btn {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #5eb925;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #logout-btn:hover {
+    background-color: #076523;
+  }
+  
+  #admin-info {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #555;
+  }
+
+  #theme-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  #theme-section label {
+    margin-top: 1rem;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  body.light {
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  body.midlight {
+    background-color: #eaeaea;
+    color: #333;
+  }
+  
+  body.dark {
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+  }
+  

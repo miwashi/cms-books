@@ -1,0 +1,46 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | BokAnka</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/base.js" defer></script>
+    <script defer src="js/signup.js"></script>
+    <script src="js/theme.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-top">
+                <div class="logo">📚 BokAnka</div>
+                <button class="hamburger" id="hamburger">&#9776;</button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Username" id="signup-username" />
+            <input type="email" placeholder="Email" id="signup-email" />
+            <input type="password" placeholder="Password" id="signup-password" />
+            <button id="signup-btn">Sign Up</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 BokAnka. All rights reserved.</p>
+    </footer>
+</body>
+</html>

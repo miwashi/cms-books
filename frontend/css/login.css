@@ -1,0 +1,48 @@
+/* login.css */
+
+main {
+    flex: 1; /* footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-container input,
+  .form-container button {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    margin: 0.75rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .form-container button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #005fa3;
+  }
+  

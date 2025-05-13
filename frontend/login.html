@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | BokAnka</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="js/login.js"></script>
+    <script src="js/theme.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-top">
+                <div class="logo">📚 BokAnka</div>
+                <button class="hamburger" id="hamburger">&#9776;</button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Main</a></li>
+                <!-- <li><a href="home.html">Home</a></li> -->
+                <li><a href="signup.html">Sign Up</a></li>
+                <button id="logout-btn" class="btn hidden">Logout</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" id="login-email" />
+            <input type="password" placeholder="Password" id="login-password" />
+            <button id="login-btn">Login</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BokAnka. All rights reserved.</p>
+    </footer>
+</body>
+</html>

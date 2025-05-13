@@ -1,0 +1,118 @@
+/* themes.css */
+/* body.light {
+  background-color: #ffffff;
+  color: #222;
+}
+
+body.middle_light {
+  background-color: #7993bc;
+  color: #222;
+}
+
+body.dark {
+  background-color: #222;
+  color: #f9f9f9;
+} */
+
+
+
+/* 기본 테마 클래스는 body에 붙습니다: body.light, body.dark 등 */
+
+/* --- LIGHT THEME --- */
+body.light {
+  background-color: #ffffff;
+  color: #222;
+}
+
+body.light .navbar,
+body.light footer {
+  background-color: #007acc;
+  color: white;
+}
+
+body.light .auth-buttons .btn,
+body.light .nav-links a {
+  background-color: white;
+  color: #007acc;
+}
+
+body.light .auth-buttons .btn:hover,
+body.light .nav-links a:hover {
+  background-color: #005fa3;
+  color: white;
+}
+
+body.light .book-card {
+  background-color: #fff;
+  color: #333;
+}
+
+body.light .banner {
+  background-color: #fff;
+}
+
+/* --- MIDDLE LIGHT THEME --- */
+body.middle_light {
+  background-color: #7993bc;
+  color: #222;
+}
+
+body.middle_light .navbar,
+body.middle_light footer {
+  background-color: #5b76a3;
+  color: white;
+}
+
+body.middle_light .auth-buttons .btn,
+body.middle_light .nav-links a {
+  background-color: white;
+  color: #5b76a3;
+}
+
+body.middle_light .auth-buttons .btn:hover,
+body.middle_light .nav-links a:hover {
+  background-color: #3c5b88;
+  color: white;
+}
+
+body.middle_light .book-card {
+  background-color: #e2e7f0;
+  color: #222;
+}
+
+body.middle_light .banner {
+  background-color: #dbe3f5;
+}
+
+/* --- DARK THEME --- */
+body.dark {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+body.dark .navbar,
+body.dark footer {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .auth-buttons .btn,
+body.dark .nav-links a {
+  background-color: #2e2e2e;
+  color: #f9f9f9;
+}
+
+body.dark .auth-buttons .btn:hover,
+body.dark .nav-links a:hover {
+  background-color: #444;
+  color: white;
+}
+
+body.dark .book-card {
+  background-color: #1a1a1a;
+  color: #eee;
+}
+
+body.dark .banner {
+  background-color: #1f1f1f;
+}
